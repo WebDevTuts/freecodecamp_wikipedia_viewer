@@ -41,3 +41,33 @@ input[type="text"] {
   color: white;
   text-decoration: none;
 }
+
+form {
+  position: relative;
+  display: block;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  margin-left: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  border: 4px solid #D96F32;
+  border-radius: 20px;
+  transition: all .25s ease .3s;
+  cursor: pointer;
+}
+
+form:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 90%;
+  left: 90%;
+  width: 16px;
+  height: 3px;
+  background-color: #D96F32;
+  border-radius: 1px;
+  transition: width .15s ease .55s;
+  transform: rotate(45deg);
+  transform-origin: top left;
+}
