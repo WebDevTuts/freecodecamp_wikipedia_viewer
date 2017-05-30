@@ -19,4 +19,12 @@ app.controller('MainCtrl', function($scope, $http, $timeout) {
     $scope.results = [];
     $scope.$apply();
   });
+
+  input.on('transitionend webkitTransitionEnd oTransitionEnd', function() {
+    if (form.hasClass('open')) {
+      input.focus();
+    } else {
+      return;
+    }
+  });
 });
