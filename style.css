@@ -152,3 +152,9 @@ form.open .eks:after {
   bottom: 9px;
   transition-delay: .3s;
 }
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+  width: 80%;
+}
