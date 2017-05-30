@@ -16,3 +16,9 @@ html, body, main {
   height: 100%;
   background-color: #092B40;
 }
+
+input[type="text"] {
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+}
