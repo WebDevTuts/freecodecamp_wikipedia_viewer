@@ -7,4 +7,16 @@ app.controller('MainCtrl', function($scope, $http, $timeout) {
   var help = $('#help');
 
   $scope.result = [];
+
+  close.on('click', function() {
+    form.toggleClass('open');
+
+    if(!form.hasClass('open') && $scope.searchTxt !== '' && typeof $scope.searchTxt !== 'undefined') {
+      search.toggleClass('fullHeight');
+      help.toggleClass('hide');
+      $scope.searchTxt = '';
+    }
+    $scope.results = [];
+    $scope.$apply();
+  });
 });
